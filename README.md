@@ -9,4 +9,4 @@
 <!-- Bonus Features -->
 
 - Use MongoDB for persistent list.
-- Implement authentication.
+- Implement authentication
