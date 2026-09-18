@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <nav className='navbar'>
       <div className='navbar-brand'>
-        <Link>Movieum 🏛️</Link>
+        <Link to='/'>Movieum 🏛️</Link>
       </div>
 
       <div className='navbar-links'>

@@ -9,4 +9,5 @@
 <!-- Bonus Features -->
 
 - Use MongoDB for persistent list.
-- Implement authentication
+- Implement authentication.
+- Make the navbar fixed.
