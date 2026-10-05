@@ -1,8 +1,8 @@
 # Movieum
 
-A personal movie collection app for all awesome movies that you have watched, so it's like a museum but for your favorites movies, so that you can have readily available movie selection to rewatch, reminisce, or recommend to your loved ones or friends without having to browse the entire internet! Trust me, it's beyond nostalgic, it's personal!
+A personal movie collection app for all awesome movies that you have watched, so it's like a museum but for your favorites movies, so that you can have readily available movie selections to rewatch, reminisce, or recommend to your loved ones or friends without having to browse the entire internet! Trust me, it's beyond nostalgic, it's personal!
 
-The app is built with React and it use the largest source of movie collection in the world, the TMDB api, so you don't have to worry about not finding your favorites movies, they're certainly there.
+The app is built with React and it uses the largest source of movie collection in the world, the TMDB api, so you don't have to worry about not finding your favorites movies, they're certainly there.
 
 So, what are you waiting for, go ahead make your favorite movie collection!
 
