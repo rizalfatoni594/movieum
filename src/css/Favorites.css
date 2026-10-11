@@ -34,10 +34,11 @@
 }
 
 /* Animation for new favorites being added */
+/* The transforms are disabled in favor of the slide up on hover in the MovieCard.css */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    /* transform: translateY(20px); */
+    /* transform: translateY(50px); */
   }
   to {
     opacity: 1;
