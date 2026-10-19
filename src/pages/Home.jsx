@@ -1,7 +1,7 @@
-import '../css/Home.css';
 import { useEffect, useState } from 'react';
-import MovieCard from '../components/MovieCard.jsx';
 import { getPopularMovies, searchMovies } from '../services/api.js';
+import MovieCard from '../components/MovieCard.jsx';
+import '../css/Home.css';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -16,7 +16,7 @@ export default function Home() {
         setMovies(popularMovies);
       } catch (error) {
         console.log(error);
-        setError('Failed to load movies...');
+        setError('Failed to load popular movies...');
       } finally {
         setLoading(false);
       }
@@ -37,19 +37,18 @@ export default function Home() {
       const searchResults = await searchMovies(searchQuery);
       setMovies(searchResults);
       setError(null);
+      setSearchQuery('');
     } catch (error) {
       console.log(error);
-      setError('Failed to search movies...');
+      setError('Failed to load searched movies...');
     } finally {
       setLoading(false);
     }
-
-    // setSearchQuery('');
   }
 
   return (
     <div className='home'>
-      <form onSubmit={handleSearch} className='search-form'>
+      <form className='search-form' onSubmit={handleSearch}>
         <input
           type='text'
           placeholder='Search for movies...'
@@ -57,9 +56,8 @@ export default function Home() {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button type='submit' className='search-button'>
-          Search
-        </button>
+
+        <button className='search-button'>Search</button>
       </form>
 
       {error && <div className='error-message'>{error}</div>}

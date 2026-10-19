@@ -19,12 +19,13 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
 body {
-  margin: 0;
+  margin: 0; /* Intentionally left here, eventhough redundant */
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -73,7 +74,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #fff;
   }
   a:hover {
     color: #747bff;

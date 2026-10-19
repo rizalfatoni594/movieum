@@ -7,7 +7,7 @@ export function useMovieContext() {
   return context;
 }
 
-export default function MovieProvider({ children }) {
+export default function MovieContextProvider({ children }) {
   const [favorites, setFavorites] = useState(() => {
     const storedFavs = localStorage.getItem('favorites');
 
@@ -16,7 +16,7 @@ export default function MovieProvider({ children }) {
     try {
       return JSON.parse(storedFavs);
     } catch (error) {
-      console.log('Failed to parse favorites from localStorage:', error);
+      console.log('Failed to parse favorites from localStorage.', error);
       return [];
     }
   });

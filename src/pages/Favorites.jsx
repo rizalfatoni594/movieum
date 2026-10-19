@@ -1,6 +1,6 @@
 import MovieCard from '../components/MovieCard.jsx';
-import '../css/Favorites.css';
 import { useMovieContext } from '../contexts/MovieContext.jsx';
+import '../css/Favorites.css';
 
 export default function Favorites() {
   const { favorites } = useMovieContext();
@@ -9,6 +9,7 @@ export default function Favorites() {
     return (
       <div className='favorites'>
         <h2>Your Favorite Movies</h2>
+
         <div className='movies-grid'>
           {favorites.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
